@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditText.OutLined.Background" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">@dimen/_10dp</item>
+        <item name="android:background">@drawable/edit_outlined</item>
+    </style>
+    <style name="Label.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelMedium</item>
+        <item name="android:background">@drawable/label_outlined</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Chip.Theme" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="selectableItemBackground">@drawable/tab_background_selected</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+
+    <style name="AppBar.Title" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize16" parent="">
+        <item name="cornerSize">@dimen/_16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize8" parent="">
+        <item name="cornerSize">@dimen/_8dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSizeRight8" parent="">
+        <item name="cornerSizeTopRight">@dimen/_16dp</item>
+        <item name="cornerSizeTopLeft">@dimen/_16dp</item>
+        <item name="cornerSizeBottomLeft">@dimen/_16dp</item>
+        <item name="cornerSizeBottomRight">@dimen/_16dp</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">38dp</item>
+        <item name="android:minHeight">38dp</item>
+        <item name="backgroundTint">@color/custom_selector</item>
+    </style>
+
+    <style name="ToggleButtonGroupStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="backgroundTint">@color/custom_selector</item>
+    </style>
+
+</resources>

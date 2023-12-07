@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.valortask.view.activity.users_module.model.SavedCardModel" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.CardView.Filled"
+        android:layout_margin="@dimen/_8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivCardImage"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/_0dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintWidth_percent=".2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="@dimen/_8dp"
+                android:src="@drawable/baseline_payment_24"
+
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivCardImage"
+                android:layout_marginEnd="@dimen/_16dp"
+                >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvCardHolderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@{model.cardHolderName}"
+                    tools:text="PushparajKannan"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tvCardHolderName"
+                    android:text='@{"---- ---- ---- "+model.cardNumber}'
+                    tools:text="---- ---- ---- 3456"
+                    android:letterSpacing=".4"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="@dimen/_16dp"/>
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvCardExpAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="05/25"
+                    android:text="@{model.expAt}"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

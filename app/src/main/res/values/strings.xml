@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ValorTask</string>
+    <string name="enter_room_name">Enter room name</string>
+    <string name="isLive">isLive</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="videos">Videos</string>
+    <string name="feeds">Feeds</string>
+    <string name="vpm">VPM</string>
+    <string name="splash">Splash Screen</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="logout">Logout</string>
+    <string name="menu_settings">Settings</string>
+    <string name="are_you_sure_want_to_logout">Are sure to logout?</string>
+    <string name="logout_title">LogOut</string>
+    <string name="product_list">Product List</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

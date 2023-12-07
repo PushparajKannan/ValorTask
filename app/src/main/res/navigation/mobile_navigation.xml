@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_product_list">
+
+    <fragment
+        android:id="@+id/navigation_product_list"
+        android:name="com.example.valortask.view.activity.users_module.fragment.ProductListFragment"
+        android:label="Product List"
+        tools:layout="@layout/fragment_product_list" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.valortask.view.activity.users_module.fragment.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_payment"
+        android:name="com.example.valortask.view.activity.users_module.fragment.PaymentFragment"
+        android:label="@string/title_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_navigation_payment_to_savedCardFragment"
+            app:destination="@id/savedCardFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.valortask.view.activity.users_module.fragment.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <dialog
+        android:id="@+id/nav_logout"
+        android:name="com.example.valortask.view.activity.users_module.dialog.LogOutDialog"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_dialog_logout" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.valortask.view.activity.users_module.fragment.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/savedCardFragment"
+        android:name="com.example.valortask.view.activity.users_module.fragment.SavedCardFragment"
+        android:label="Saved Cards"
+        tools:layout="@layout/fragment_saved_cards" />
+
+
+</navigation>
